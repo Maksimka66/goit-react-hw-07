@@ -23,6 +23,7 @@ function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
+      {isLoading && !isError && <p>Request in progress...</p>}
       <ContactList />
     </>
   );
